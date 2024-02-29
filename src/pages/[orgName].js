@@ -69,9 +69,9 @@ export async function getServerSideProps (context) {
 export default function Page({content}) {
  
   const idList = content.id
-  idList.forEach((tag, index) => {
-    ReactDOM.render(<ReactMarkdown source={content.markdown.tag} />, document.getElementById(content.id[tag]))
-  });
+  // idList.forEach((tag, index) => {
+  //   ReactDOM.render(<ReactMarkdown source={content.markdown.tag} />, document.getElementById(content.id[tag]))
+  // });
   return (
     <>
       <div className="div">
